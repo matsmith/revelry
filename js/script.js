@@ -107,4 +107,4 @@ $(function() {
 	$('html').addClass('loaded');
 });
 
-google.maps.event.addDomListener(window, 'load', initializeMap);
+//google.maps.event.addDomListener(window, 'load', initializeMap);

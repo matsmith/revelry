@@ -92,7 +92,7 @@ nav a:link {
 
 nav a:hover {
   -webkit-transition: background-color .5s ease, opacity 1s ease;
-  background-color: #fff;
+  background-color: #dad5c8;
   opacity: .4;
 }
 
@@ -186,7 +186,7 @@ footer.block {
 .block__align-middle {
   margin: 0 auto;
   position: relative;
-  top: 50%;
+  top: 48%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -256,15 +256,36 @@ footer.block {
 
 #map-to-revelry img{max-width: inherit;}
 
+.corner-text {
+  position: absolute;
+  top: 250px;
+  left: 10px;
+  text-shadow: 0px -1px 0px rgba(255,255,255,.5);
+  transform: rotate(-30deg);
+  font-size: 1.2em;
+  color: #dad5c8;
+}
+
 /* Media Queries
 ==================== */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
+}
+
+@media (max-width: 768px) {
+  .corner-text {
+    transform: rotate(-10deg);
+    left: 50px;
+  }
 }
 
 @media (max-width: 540px) {
   header .definition {
-	margin-top: -80px;
+	  margin-top: -80px;
+  }
+
+  .corner-text {
+    top: 350px;
   }
 }
 
@@ -313,6 +334,14 @@ footer.block {
 
   header h3 {
 	font-size: 1em;
+  }
+
+  nav a:link {
+    font-size: 1em;
+  }  
+  .corner-text {
+    top: 280px;
+    left: 10px;
   }
 }
 
