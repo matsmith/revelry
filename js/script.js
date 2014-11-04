@@ -90,7 +90,7 @@ $(function() {
 	$('nav a').on('click', function(e) {
 		e.preventDefault();
 		var loc = $(this).attr('href').replace('#','');
-		$.scrollTo($('section[data-anchor="'+loc+'"]'), {
+		$.scrollTo($('nav[data-anchor="'+loc+'"], section[data-anchor="'+loc+'"]'), {
 			axis : 'y',
 			duration : 500
 		});
@@ -107,4 +107,4 @@ $(function() {
 	$('html').addClass('loaded');
 });
 
-//google.maps.event.addDomListener(window, 'load', initializeMap);
+google.maps.event.addDomListener(window, 'load', initializeMap);

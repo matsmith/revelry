@@ -30,3 +30,6 @@
 [data-navicon="icon-share"]:before {
 	content: "\e602";
 }
+[data-navicon="icon-home"]:before {
+	content: "\e604";
+}
