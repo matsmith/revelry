@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Revelry Brewing Co.</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<title>Revelry Brewing Co.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/remix.css">
-        <link rel="stylesheet" href="css/skew.css">
-    </head>
-    <body>
-        <nav>
-            <a href="#home" data-navicon="icon-home">&nbsp;</a>
-            <a href="#beer" data-icon="icon-hop">&nbsp;</a>
-            <a href="#tasting-room" data-navicon="icon-clock">&nbsp;</a>
-            <a href="#map-to-revelry" data-navicon="icon-location">&nbsp;</a>
-            <a href="#food" data-navicon="icon-food">&nbsp;</a>
-            <a href="#share" data-navicon="icon-share">&nbsp;</a>
-        </nav>
-        <header class="block" data-anchor="home">
-            <div class="block__align-middle">
-                <h1 data-icon="icon-logo"></h1>
-                <div class="definition">
-                    <h2>Rev&middot;el&middot;ry</h2>
-                    <h3>n. Boisterous festivities, while enjoying craft beer.</h3>
-                </div>
-                <div class="corner-text"><span data-icon="icon-stars"></span><br />Now distributing to local<br />bars and restaurants!</div>
-            </div>
-            <a class="control-btn" data-arrow="icon-down" href="#"> </a>
-        </header>
-        <section class="block background-white" data-anchor="beer">
-            <div class="block__align-middle">
-                <h2>Our Beer</h2>
-                <ul class="square">
-                    <li class="square__item">Pass the Lemongrass IPA</li>
-                    <li class="square__item">Funkmaster Brett IPA</li>
-                    <li class="square__item">Poke the Bear APA</li>
-                    <li class="square__item">Crosstown Brown Nut Brown Ale</li>
-                    <li class="square__item">Santas Leftovers Sweet Oatmeal Stout</li>
-                    <li class="square__item">Love for Locklan Pale Ale</li>
-                    <li class="square__item">Pumpkin Spice Ale</li>
-                    <li class="square__item">Berliner Weiss</li>
-                    <li class="square__item">Small Victories Amber</li>
-                </ul>
-                <p>Growlers available on premise. 64 ounce: $7 growlers, $15 fills. 32 ounce: $5 growlers, $8 fills. Pint glasses for sale for $5. Shirts, tanks and bumper stickers also available.</p>
-            </div>
-            <a class="control-btn" data-arrow="icon-down" href="#"> </a>
-        </section>
-        <section class="block" data-anchor="tasting-room">
-            <div class="block__align-middle">
-                <h2>Tasting Room Hours</h2>
-                <p>Thursday to Saturday<br />4pm-10pm</p>
-                <p>Live music Saturdays, and occasionally Thursdays and Fridays</p>
-                <p>Dog friendly</p>
-            </div>
-            <a class="control-btn" data-arrow="icon-down" href="#"> </a>
-        </section>
-        <section class="block background-white" data-anchor="map-to-revelry">
-            <div id="map-to-revelry"></div>
-            <a class="control-btn" data-arrow="icon-down" href="#"> </a>
-        </section>
-        <section class="block background-white" data-anchor="food">
-            <div class="block__align-middle">
-                <h2>Hey, Youuuuu Guuyyys!!!!</h2>
-                <p>
-                    Salted Pretzel with cheese and spicy mustard.<br />
-                    Turkey and Pimento Waffle Sandwich.<br />
-                    Corned Beef Waffle Sandwich with Swiss, Cherry Peppers, and Bistro Sauce.<br />
-                    Mary Anne's Monte Cristo with ham, turkey, melted Swiss, and strawberry jam.<br />
-                    Ice Cream Waffle Sandwich.
-                </p>
-                <a class="control-btn" data-arrow="icon-down" href="#"> </a>
-            </div>
-        </section>
-        <section class="block" data-anchor="share">
-            <div class="block__align-middle">
-                <p>
-                    <a href="https://twitter.com/revelrybrewing" data-icon="icon-twitter" title="Our twitter page" class="icon"></a>
-                    <a href="https://www.facebook.com/revelrybrewingco" data-icon="icon-facebook" title="The revelry facebook page" class="icon"></a>
-                    <a href="http://instagram.com/revelrybrewingco" data-icon="icon-camera" title="Out instagram photos" class="icon"></a>
-                </p>
-            </div>
-        </section>
-        <footer class="block clearfix">
-            <div class="block__align-middle">
-                <a class="float-left" href="matsmith.github.io">10 Conroy Street</a>
-                <a class="float-right" href="">Charleston, SC 29403</a>
-                <p data-icon="icon-stars" class="icon"></p>
-            </div>
-        </footer>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/remix.css">
+		<link rel="stylesheet" href="css/skew.css">
+	</head>
+	<body>
+		<nav>
+			<a href="#home" data-navicon="icon-home">&nbsp;</a>
+			<a href="#beer" data-icon="icon-hop">&nbsp;</a>
+			<a href="#tasting-room" data-navicon="icon-clock">&nbsp;</a>
+			<a href="#map-to-revelry" data-navicon="icon-location">&nbsp;</a>
+			<a href="#food" data-navicon="icon-food">&nbsp;</a>
+			<a href="#share" data-navicon="icon-share">&nbsp;</a>
+		</nav>
 
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
-        <script src="js/jquery.parallax.min.js"></script>
-        <script src="js/headroom.js"></script>
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm5KxqraJfsvtpsVmjmRBi_2FlZB_4nt0&sensor=false"></script> -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9sijHDXIXk6YGzHm5wdax2BcZyoObEK4&sensor=false"></script>
-        <script src="js/script.js"></script>
-    </body>
+		<header class="block" data-anchor="home">
+			<div class="block__align-middle">
+				<h1 data-icon="icon-logo"></h1>
+				<div class="definition">
+					<h2>Rev&middot;el&middot;ry</h2>
+					<h3>n. Boisterous festivities, while enjoying craft beer.</h3>
+				</div>
+				<div class="corner-text"><span data-icon="icon-stars"></span><br />Now distributing to local<br />bars and restaurants!</div>
+			</div>
+			<a class="control-btn" data-arrow="icon-down" href="#"> </a>
+		</header>
+
+		<section class="block background-white" data-anchor="beer">
+				<h2>Our Beer</h2>
+				<ul class="square">
+					<li class="square__item">Pass the Lemongrass<br /><span class="square__item--style">IPA</span></li>
+					<li class="square__item">Funkmaster Brett<br /><span class="square__item--style">IPA</span></li>
+					<li class="square__item">Poke the Bear<br /><span class="square__item--style">APA</span></li>
+					<li class="square__item">Crosstown Brown<br /><span class="square__item--style">Nut Brown Ale</span></li>
+					<li class="square__item">Santas Leftovers<br /><span class="square__item--style">Sweet Oatmeal Stout</span></li>
+					<li class="square__item">Love for Locklan<br /><span class="square__item--style">Pale Ale</span></li>
+					<li class="square__item">Pumpkin Spice<br /><span class="square__item--style">Ale</span></li>
+					<li class="square__item">Berliner<br /><span class="square__item--style">Weiss</span></li>
+					<li class="square__item">Small Victories<br /><span class="square__item--style">Amber</span></li>
+				</ul>
+				<p>Growlers available on premise. 64 ounce: $7 growlers, $15 fills. 32 ounce: $5 growlers, $8 fills. Pint glasses for sale for $5. Shirts, tanks and bumper stickers also available.</p>
+		</section>
+
+		<section class="block" data-anchor="tasting-room">
+			<div class="block__align-middle">
+				<h2>Tasting Room Hours</h2>
+				<p>Thursday to Saturday<br />4pm-10pm</p>
+				<p>Live music Saturdays, and occasionally Thursdays and Fridays</p>
+				<p>Dog friendly</p>
+			</div>
+		</section>
+
+		<section class="block background-white" data-anchor="map-to-revelry">
+			<div id="map-to-revelry"></div>
+		</section>
+
+		<section class="block background-white" data-anchor="food">
+			<div class="block__align-middle">
+				<h2>Hey, Youuuuu Guuyyys!!!!<br />There's food</h2>
+				<p>
+					Salted Pretzel with cheese and spicy mustard.<br />
+					Turkey and Pimento Waffle Sandwich.<br />
+					Corned Beef Waffle Sandwich with Swiss, Cherry Peppers, and Bistro Sauce.<br />
+					Mary Anne's Monte Cristo with ham, turkey, melted Swiss, and strawberry jam.<br />
+					Ice Cream Waffle Sandwich.
+				</p>
+			</div>
+		</section>
+
+		<section class="block" data-anchor="share">
+			<div class="block__align-middle">
+				<p>
+					<a href="https://twitter.com/revelrybrewing" data-icon="icon-twitter" title="Our twitter page" class="icon"></a>
+					<a href="https://www.facebook.com/revelrybrewingco" data-icon="icon-facebook" title="The revelry facebook page" class="icon"></a>
+					<a href="http://instagram.com/revelrybrewingco" data-icon="icon-camera" title="Out instagram photos" class="icon"></a>
+				</p>
+			</div>
+		</section>
+
+		<footer class="block clearfix">
+			<div class="block__align-middle">
+				<a class="float-left" href="matsmith.github.io">10 Conroy Street</a>
+				<a class="float-right" href="">Charleston, SC 29403</a>
+				<p data-icon="icon-stars" class="icon"></p>
+			</div>
+		</footer>
+
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+		<script src="js/jquery.parallax.min.js"></script>
+		<script src="js/headroom.js"></script>
+		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm5KxqraJfsvtpsVmjmRBi_2FlZB_4nt0&sensor=false"></script> -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9sijHDXIXk6YGzHm5wdax2BcZyoObEK4&sensor=false"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>

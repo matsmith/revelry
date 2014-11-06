@@ -67,8 +67,14 @@ $(function() {
 	// Sections height & scrolling
 	$(window).resize(function() {
 		var sH = $(window).height();
+		// $('section').each(function(){
+		// 	console.log($(this).css('height'), sH);
+		// 	if( $(this).css('height') > sH ){
+		// 		$(this).css('height', (sH + 'px'));
+		// 	}
+		// });
 		$('header, section, #map-to-revelry').css('height', (sH + 'px'));
-	});        
+	});
 
 	// Parallax
 	$('section').each(function() {
@@ -90,7 +96,7 @@ $(function() {
 	$('nav a').on('click', function(e) {
 		e.preventDefault();
 		var loc = $(this).attr('href').replace('#','');
-		$.scrollTo($('nav[data-anchor="'+loc+'"], section[data-anchor="'+loc+'"]'), {
+		$.scrollTo($('header[data-anchor="'+loc+'"], section[data-anchor="'+loc+'"]'), {
 			axis : 'y',
 			duration : 500
 		});
