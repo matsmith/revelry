@@ -67,13 +67,12 @@ $(function() {
 	// Sections height & scrolling
 	$(window).resize(function() {
 		var sH = $(window).height();
-		// $('section').each(function(){
-		// 	console.log($(this).css('height'), sH);
-		// 	if( $(this).css('height') > sH ){
-		// 		$(this).css('height', (sH + 'px'));
-		// 	}
-		// });
-		$('header, section, #map-to-revelry').css('height', (sH + 'px'));
+		$('section').each(function(){
+			if( $(this).height() < sH ){
+				$(this).css('height', (sH + 'px'));
+			}
+		});
+		$('header, #map-to-revelry').css('height', (sH + 'px'));
 	});
 
 	// Parallax
